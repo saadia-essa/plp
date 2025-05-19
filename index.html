@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interactive JavaScript Concepts Demo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header id="main-header">
+        <h1 class="title">Welcome to My Interactive Page</h1>
+    </header>
+    <section class="content">
+        <p>This is a sample paragraph to demonstrate basic styling using external CSS.</p>
+        <img src="https://via.placeholder.com/150" alt="Sample Image" class="styled-image" />
+        <button id="action-btn">Click Me</button>
+    </section>
+
+    <section class="form-section">
+        <h2>Sign Up Form</h2>
+        <form id="signup-form" novalidate>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <span class="error-message" id="name-error"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error-message" id="email-error"></span>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" />
+            <span class="error-message" id="password-error"></span>
+
+            <button type="submit" id="submit-btn">Submit</button>
+            <div id="form-message"></div>
+        </form>
+    </section>
+
+    <section class="interactive-elements">
+        <h2>Interactive Elements</h2>
+
+        <div class="color-toggle">
+            <button id="color-btn">Change My Color</button>
+        </div>
+
+        <div class="image-gallery">
+            <h3>Image Gallery</h3>
+            <img src="https://via.placeholder.com/150/ff7f7f" alt="Gallery Image 1" class="gallery-image active" />
+            <img src="https://via.placeholder.com/150/7fbfff" alt="Gallery Image 2" class="gallery-image" />
+            <img src="https://via.placeholder.com/150/7fff7f" alt="Gallery Image 3" class="gallery-image" />
+            <button id="prev-img">Previous</button>
+            <button id="next-img">Next</button>
+        </div>
+
+        <div class="tabs">
+            <h3>Tabs</h3>
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+                <button class="tab-btn" data-tab="tab2">Tab 2</button>
+                <button class="tab-btn" data-tab="tab3">Tab 3</button>
+            </div>
+            <div class="tab-content active" id="tab1">
+                <p>This is content for Tab 1.</p>
+            </div>
+            <div class="tab-content" id="tab2">
+                <p>This is content for Tab 2.</p>
+            </div>
+            <div class="tab-content" id="tab3">
+                <p>This is content for Tab 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
